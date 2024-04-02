@@ -29,20 +29,12 @@ class ProductManager{
     }
 
     getProducts(){
-        // NOTA PARA EL TUTOR: 
-            // Acá en un principio quería poner:
-            // return this.products
-            // pero no me devolvía nada, entonces puse esta opción:
-        return console.log(this.products)
+        return this.products
     }
 
     getProductById(numeroId){
         let index = this.products.findIndex(p=>p.id === numeroId)
         if(index !== -1){
-            // NOTA PARA EL TUTOR: 
-            // Acá en un principio quería poner:
-            // return this.products[index]
-            // pero no me devolvía nada, entonces puse esta opción:
             return console.log(this.products[index])
         }else{
             return console.log("Not found")
